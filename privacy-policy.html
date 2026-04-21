@@ -17,13 +17,25 @@
     .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
     a { color: var(--accent); }
     .highlight { background: #f0fdf4; border-left: 4px solid var(--accent); padding: 1rem; border-radius: 0 8px 8px 0; margin: 1rem 0; }
+    nav { display: flex; gap: 0; border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--border); }
+    nav a { flex: 1; text-align: center; padding: 0.6rem 0.4rem; text-decoration: none; color: var(--muted); font-size: 0.85rem; font-weight: 500; background: var(--card); border-right: 1px solid var(--border); transition: background 0.2s, color 0.2s; }
+    nav a:last-child { border-right: none; }
+    nav a:hover { background: var(--bg); color: var(--fg); }
+    nav a.active { background: var(--accent); color: #fff; font-weight: 600; }
     @media (prefers-color-scheme: dark) {
       :root { --bg: #0f172a; --fg: #e2e8f0; --card: #1e293b; --muted: #94a3b8; --border: #334155; }
     }
+    @media (max-width: 600px) { nav { flex-wrap: wrap; } nav a { flex: 1 1 50%; border-bottom: 1px solid var(--border); } }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav>
+      <a href="privacy-policy.html" class="active">Confidentialite</a>
+      <a href="terms.html">CGU / CGV</a>
+      <a href="mentions-legales.html">Mentions legales</a>
+      <a href="delete-account.html">Supprimer mon compte</a>
+    </nav>
     <h1>Politique de Confidentialite</h1>
     <p class="meta">Application PouvoirAchat+ &mdash; Derniere mise a jour : 21 avril 2026</p>
 
@@ -160,6 +172,13 @@
       2A Chemin des cedres, 56400 Brech<br>
       <a href="mailto:victor.airiaud@outlook.fr">victor.airiaud@outlook.fr</a>
     </p>
+
+    <nav style="margin-top: 2rem;">
+      <a href="privacy-policy.html" class="active">Confidentialite</a>
+      <a href="terms.html">CGU / CGV</a>
+      <a href="mentions-legales.html">Mentions legales</a>
+      <a href="delete-account.html">Supprimer mon compte</a>
+    </nav>
   </div>
 </body>
 </html>
