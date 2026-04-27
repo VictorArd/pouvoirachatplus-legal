@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PouvoirAchat+ - Informations legales</title>
+  <meta name="description" content="Informations legales, politique de confidentialite, conditions d'utilisation et mentions legales de l'application PouvoirAchat+.">
+  <style>
+    :root { --bg: #f8f9fa; --fg: #1a1a2e; --accent: #16a34a; --accent-dark: #15803d; --card: #ffffff; --muted: #6b7280; --border: #e5e7eb; --gold: #d97706; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.7; }
+
+    .hero {
+      background: linear-gradient(135deg, #065f46 0%, #16a34a 50%, #22c55e 100%);
+      color: #fff;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .hero-icon {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.2rem;
+      font-size: 2rem;
+      backdrop-filter: blur(10px);
+    }
+    .hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .hero p { font-size: 1.05rem; opacity: 0.9; max-width: 500px; margin: 0 auto; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: var(--fg);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      border-color: var(--accent);
+    }
+    .card-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .card-icon-green { background: #f0fdf4; }
+    .card-icon-blue { background: #eff6ff; }
+    .card-icon-amber { background: #fffbeb; }
+    .card-icon-red { background: #fef2f2; }
+    .card-icon-purple { background: #faf5ff; }
+    .card h3 { font-size: 1rem; font-weight: 600; }
+    .card p { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+
+    .stores {
+      display: flex;
+      gap: 0.8rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: border-color 0.2s;
+    }
+    .store-badge:hover { border-color: var(--accent); }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0f172a; --fg: #e2e8f0; --card: #1e293b; --muted: #94a3b8; --border: #334155; }
+      .hero { background: linear-gradient(135deg, #052e16 0%, #065f46 50%, #16a34a 100%); }
+      .hero-icon { background: rgba(255,255,255,0.15); }
+      .card-icon-green { background: #052e16; }
+      .card-icon-blue { background: #0c1a3a; }
+      .card-icon-amber { background: #1c1a05; }
+      .card-icon-red { background: #1c0a0a; }
+      .card-icon-purple { background: #1a0a2e; }
+    }
+    @media (max-width: 600px) {
+      .cards { grid-template-columns: 1fr; }
+      .hero { padding: 2rem 1rem; }
+      .hero h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-icon">&#9981;</div>
+    <h1>PouvoirAchat+</h1>
+    <p>L'app qui centralise toutes les economies du quotidien pour les Francais.</p>
+    <div class="stores">
+      <a href="https://apps.apple.com/fr/app/pouvoirachat/id6744257498" class="store-badge">&#63743; App Store</a>
+      <a href="#" class="store-badge">&#9654; Google Play (bientot)</a>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <p class="section-title">Documents legaux</p>
+    <div class="cards">
+      <a href="privacy-policy.html" class="card">
+        <div class="card-icon card-icon-green">&#128274;</div>
+        <h3>Politique de confidentialite</h3>
+        <p>Comment nous collectons, utilisons et protegeons vos donnees personnelles.</p>
+      </a>
+      <a href="terms.html" class="card">
+        <div class="card-icon card-icon-blue">&#128220;</div>
+        <h3>CGU / CGV</h3>
+        <p>Conditions generales d'utilisation et de vente de l'application et de l'abonnement Premium.</p>
+      </a>
+      <a href="mentions-legales.html" class="card">
+        <div class="card-icon card-icon-amber">&#9878;</div>
+        <h3>Mentions legales</h3>
+        <p>Informations sur l'editeur, l'hebergement et les droits de propriete intellectuelle.</p>
+      </a>
+      <a href="accessibilite.html" class="card">
+        <div class="card-icon card-icon-purple">&#9855;</div>
+        <h3>Accessibilite</h3>
+        <p>Notre engagement pour rendre l'application accessible au plus grand nombre.</p>
+      </a>
+    </div>
+
+    <p class="section-title">Gestion de votre compte</p>
+    <div class="cards">
+      <a href="delete-account.html" class="card">
+        <div class="card-icon card-icon-red">&#128465;</div>
+        <h3>Supprimer mon compte</h3>
+        <p>Procedure pour supprimer votre compte et toutes vos donnees associees.</p>
+      </a>
+      <a href="mailto:victor.airiaud@outlook.fr" class="card">
+        <div class="card-icon card-icon-green">&#9993;</div>
+        <h3>Nous contacter</h3>
+        <p>Une question, une demande RGPD ou un probleme ? Ecrivez-nous directement.</p>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 PouvoirAchat+ &mdash; AIRIAUD Victor, Auto-entrepreneur</p>
+    <p style="margin-top: 0.3rem;"><a href="mailto:victor.airiaud@outlook.fr">victor.airiaud@outlook.fr</a></p>
+  </div>
+
+</body>
+</html>
